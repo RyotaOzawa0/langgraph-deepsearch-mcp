@@ -144,15 +144,6 @@ MCPサーバーがClaude DesktopなどのMCPホストに接続されると、以
 2. **DeepResearchGraph**: LangGraphによる調査ワークフロー
 3. **FastMCP Server**: MCPプロトコルでのツール公開
 
-### Gemini実装準拠構造
-
-元のGemini DeepResearch実装に準拠：
-
-- **専門化された状態クラス**: `OverallState`, `QueryGenerationState`, `WebSearchState`, `ReflectionState`
-- **JSON構造化出力**: LLMからの応答をJSONでパース
-- **並列検索処理**: `asyncio.gather`による複数検索の同時実行
-- **分離されたプロンプト**: `prompts.py`でテンプレート管理
-
 ## 🔧 Claude Desktop連携
 
 ### uvxを使用した設定 
